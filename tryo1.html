@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="materialize/css/materialize.min.css"></link>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+		 var options = [
+		      {selector: '#rowdiv', offset: 50, callback: function(el) {
+		        Materialize.showStaggeredList($(el));
+		      } }
+    		];
+    Materialize.scrollFire(options);
+	</script>
+	
+</head>
+<body>
+	<div class="col teal s12 center">
+		<img src="homesideimage.jpg" class="circle" height="50px">
+	</div>
+	<nav>
+	    <div class="nav-wrapper blue-text text-darken-2 grey darken-3">
+
+	    	<ul class="left hide-on-med-and-down" >
+	    		<li>
+	         		<a href="sass.html"><i class="material-icons left"></i>HOME</a>
+	         	</li>
+	    		<li>
+	    			<a href="#login" onclick="load_home(1)" styoe=" hover:" href="sass.html">
+	    				<i class="material-icons left"></i>LOGIN
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="#schedule" onclick="load_home(2)" styoe=" hover:" href="sass.html">
+	    				<i class="material-icons left"></i>SCHEDULE
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="#rates" onclick="load_home(3)" styoe=" hover:" href="sass.html">
+	    				<i class="material-icons left"></i>RATES
+	    			</a>
+	    		</li>
+	    		<li>
+	    			<a href="#guide" onclick="load_home(4)" styoe=" hover:" href="sass.html">
+	    				<i class="material-icons left"></i>GUIDE
+	    			</a>
+	    		</li>
+	      	</ul>
+
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="sass.html"><i class="material-icons left"></i>Contact</a></li>
+	      </ul>
+	    </div>
+  	</nav>
+  	<div class="container left-align " style="height: 400px; background-image:url(travel2.jpg); background-position: center; position: absolute; margin-left: 200px;">
+  	<h4 style="color:  grey darken-4; font-family: verdana; margin-left: 10px;">Online Bus Tickets Booking Made Easy</h4>
+  	<p class="flow-text left-align" style="color: grey; font-family: sans-serif; margin-left: 50px;">Travel.Collect moments, not things.</p>
+  	<p class="flow-text left-align" style="color: grey; font-family: sans-serif; margin-left: 50px; margin-top: 5px;">Bustop provides you a safe and an easier<br> way to book your tickets and make you<br>travel experience the best.</p>
+  	</div>
+
+  	<div class="row" style="margin-top: 600px;" id="rowdiv">
+
+  	 	<div class="col s4">
+        	<div class="card" id="rating">
+	            <div class="card-image">
+	              <img src="rating.jpg"  style="height: 200px;">
+	            </div>
+            	<div class="card-action teal"><a href="#">RATINGS AND GALLERY</a></div>
+        	</div>
+        </div>
+
+        <div class="col s4">
+	        <div class="card" id="deals">
+	            <div class="card-image">
+	              <img src="deals.png" style="height: 200px;">
+	        	</div>
+            <div class="card-action teal" style="color: black;"><a href="#">DEALS</a></div>
+          	</div>
+      	</div>
+
+      <div class="col s4">
+        <div class="card" id="scheme">
+			<div class="card-image">
+				<img src="travel.jpg"  style="height: 200px;">
+			</div>
+            <div class="card-action teal" style="color: black;"><a href="#">SCHEME</a></div>
+        </div>
+      </div> 
+
+    </div>
+</body>
+</html>
